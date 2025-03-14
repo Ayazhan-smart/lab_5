@@ -17,13 +17,13 @@ class SecondScreenState extends State <SecondScreen> {
           children: [
             ElevatedButton(
               onPressed: (){
-                Navigator.pop(context);           
+                Navigator.pop(context);//Ашылған SecondScreen жауып, алдыңғы экранға қайта оралады         
               },
-              child: Text('Pop'),
+              child: Text('Pop'),//Pop  кнопкасын басқанда, FirstScreen қайта көрінеді
             ),
             ElevatedButton(
               onPressed: () {
-              Navigator.popAndPushNamed(context, '/third');
+              Navigator.popAndPushNamed(context, '/third'); //Ашылған SecondScreen жауып, орнына ThirdScreen ашады
             }, 
             child: Text('PopAndPushNamed'),
             ),
